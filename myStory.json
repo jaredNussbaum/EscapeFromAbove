@@ -1,0 +1,197 @@
+{
+    "Title": "Escape From Above",
+    "Credits": "Story by Jared Nussbaum",
+    "InitialLocation": "Room1",
+    
+    "HasID": "N",
+    
+    
+    
+    
+    
+    
+    
+    "Locations": {
+        "GrabID": {
+            "Body": "You need clearance to open this door. Grab your ID card from the storage closet...",
+            "Choices": [
+                {
+                    "Text": "Return to the control room",
+                    "Target": "Room1alt"
+                }
+            ]
+        },
+         
+        "Room1alt": {
+            "Body": "The control panel continues to beep. The siren continues to whine blaringly.",
+            "Choices": [
+                {
+                    "Text": "Go through the exit door...",
+                    "Target": "Room2"
+                },
+                 {
+                    "Text": "Open the closet...",
+                    "Target": "Room3"
+                },
+                {
+                   "Text": "Press random buttons on the control panel...",
+                   "Target": "Room1alt"
+               }
+            ]
+        },
+        
+        "Room1": {
+            "Body": "Your control panel starts to beep. A blaring siren whines on the wall.",
+            "Choices": [
+                {
+                    "Text": "Go through the exit door...",
+                    "Target": "Room2"
+                },
+                 {
+                    "Text": "Open the closet...",
+                    "Target": "Room3"
+                },
+                {
+                   "Text": "Press random buttons on the control panel...",
+                   "Target": "Room1alt"
+               }
+            ]
+        },
+        "Room2": {
+            "Body": "A hallway... there's a locked door at the end of the corridor. A button blinks next to it.",
+            "Choices": [
+                {
+                    "Text": "Press the button.",
+                    "Target": "Room4"
+                },
+                {
+                    "Text": "Return...",
+                    "Target": "Room1alt"
+                }
+            ]
+        },
+        "Room3": {
+            "Body": "It's a storage closet. Your ID card hangs solemnly on a rack to your right.",
+            "Choices": [
+                {
+                    "Text": "Take your ID card and return to the Control room.",
+                    "Target": "Room1alt"
+                },
+                {
+                    "Text": "Turn back around.",
+                    "Target": "Room1alt"
+                }
+            ]
+        },
+
+
+
+
+
+
+        "Room4": {
+            "Body": "The door slides open revealing a long rampart shrouded in darkness. Wind whistles along your sides.",
+            "Choices": [
+                {
+                    "Text": "Press onwards.",
+                    "Target": "Room5"
+                }
+            ]
+        },
+        "Room5": {
+            "Body": "You cautiously approach a ladder at the edge of the rampart.",
+            "Choices": [
+                {
+                    "Text": "Climb up...",
+                    "Target": "Room6"
+                },
+                {
+                    "Text": "Climb down...",
+                    "Target": "LadderDown"
+                }
+            ]
+        },
+        "LadderDown": {
+            "Body": "The ladder starts to creak under your weight.",
+            "Choices": [
+                {
+                    "Text": "Climb up...",
+                    "Target": "Room6"
+                },
+                {
+                    "Text": "Keep climbing down...",
+                    "Target": "LadderEnd"
+                }
+            ]
+        },
+        "Room6": {
+            "Body": "You climb up the ladder. Rung-by-rung you feel yourself approaching the ladder's end.",
+            "Choices": [
+                {
+                    "Text": "Keep climbing...",
+                    "Target": "Room7"
+                }
+            ]
+        },
+        "Room7": {
+            "Body": "You reach the top of the ladder. There's a hatch on the roof.",
+            "Choices": [
+                {
+                    "Text": "Open the hatch...",
+                    "Target": "Room8"
+                },
+                {
+                    "Text": "Turn back.",
+                    "Target": "LadderEnd"
+                }
+            ]
+        },
+        "Room8": {
+            "Body": "You open the hatch. Smoke fills the air, wind whips across your face. You're... on top of a blimp.",
+            "Choices": [
+                {
+                    "Text": "Look around.",
+                    "Target": "Room9"
+                },
+                {
+                    "Text": "Climb back down...",
+                    "Target": "LadderEnd"
+                }
+            ]
+        },"Room9": {
+            "Body": "Fire starts to burn around you. You don't have much time...",
+            "Choices": [
+                {
+                    "Text": "Run to the edge.",
+                    "Target": "Room10"
+                }
+            ]
+        },
+        "Room10": {
+            "Body": "You run to the edge of the blimps scaffolding. It's is about to crash into the ocean.",
+            "Choices": [
+                {
+                    "Text": "Jump.",
+                    "Target": "Survive"
+                },
+                {
+                    "Text": "Find another way.",
+                    "Target": "Burn"
+                }
+            ]
+        },
+
+
+
+        "Survive": {
+            "Body": "With a great splash, you land safely in the water. A rescue helicopter is on the way. The End!"
+        },
+        "Burn": {
+            "Body": "You turn around. You didn't have enough time. The blimp impacts and the world around you is engulfed in darkness. The End."
+        },
+        "LadderEnd": {
+            "Body": "The rung under your foot breaks. The ladder collapses out from under you. You fall into the billowing nothingness. The End."
+        }
+
+    }
+}
